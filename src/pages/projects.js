@@ -5,7 +5,7 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import Commeet from "../../public/images/logoColor.png";
+import Commeet from "../../public/images/logoCOLOR.png";
 import Portfolio from "../../public/images/Portfolio/Home-Light.png"
 import Disney from "../../public/images/disney.png";
 import { motion } from "framer-motion"
