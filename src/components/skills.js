@@ -36,18 +36,18 @@ const Skills = () => {
         </motion.div>
         <Skill title="HTML" x="-15vw" y="-2vw"/>
         <Skill title="CSS" x="-10vw" y="-10vw"/>
-        <Skill title="Javascript" x="20vw" y="6vw"/>
-        <Skill title="ReactJS" x="5vw" y="14vw"/>
-        <Skill title="Python" x="-20vw" y="-15vw"/>
-        <Skill title="Flask" x="17vw" y="-6vw"/>
-        <Skill title="SqlAlchemy" x="32vw" y="-5vw"/>
-        <Skill title="Typescript" x="0vw" y="-20vw"/>
+        <Skill title="Javascript" x="20vw" y="5vw"/>
+        <Skill title="ReactJS" x="10vw" y="14vw"/>
+        <Skill title="Python" x="-23vw" y="-15vw"/>
+        <Skill title="Flask" x="-6vw" y="10vw"/>
+        <Skill title="SqlAlchemy" x="17vw" y="-6vw"/>
+        {/* <Skill title="Typescript" x="0vw" y="-20vw"/> */}
         <Skill title="NextJS" x="-30vw" y="2vw"/>
-        <Skill title="Bootstrap" x="18vw" y="18vw"/>
-        <Skill title="Tailwind Css" x="-5vw" y="10vw"/>
-        <Skill title="Figma" x="10vw" y="-15vw"/>
+        <Skill title="Bootstrap" x="18vw" y="22vw"/>
+        <Skill title="Tailwind Css" x="0vw" y="-19vw"/>
+        <Skill title="Figma" x="10vw" y="-13vw"/>
         <Skill title="Photoshop" x="-25vw" y="10vw"/>
-        <Skill title="PostgreSQL" x="-13vw" y="17vw"/>
+        <Skill title="PostgreSQL" x="-13vw" y="18vw"/>
         
         </div>
     </>
