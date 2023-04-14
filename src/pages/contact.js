@@ -1,6 +1,9 @@
 import React from "react";
 import { useForm, ValidationError } from "@formspree/react";
 import { Covered_By_Your_Grace } from "next/font/google";
+import AnimatedText from "@/components/animatedText";
+import Head from "next/head";
+import TransitionEffect from "@/components/transitionEffect";
 
 const coveredByYourGrace = Covered_By_Your_Grace({
   weight: "400",
@@ -14,12 +17,22 @@ const Contact = () => {
     return <p>Gracias por escribirme! Responderé a la brevedad.</p>;
   }
   return (
+    <>
+    <Head>
+        <title>Lucía Belén | Contacto </title>
+        <meta
+          name="Portfolio de Lucía Belén"
+          content="Portfolio profesional de Lucía Belén, Desarrolladora de Software"
+        />
+      </Head>
     <section className="bg-light dark:bg-dark py-20 lg:py-[120px] overflow-hidden relative z-10">
+      <TransitionEffect/>
       <div className="container">
         <div className="flex flex-wrap  ">
           <div className="w-full  px-4 ">
             <div className="w-full mb-12 lg:mb-0">
-              <h2
+              <AnimatedText text="  &lt;Contáctame /&gt;" className="text-center"/>
+              {/* <h2
                 className={`${coveredByYourGrace.variable} font-cover
                    bg-gradient-to-r from-orange-400 to-purple-600 bg-clip-text text-transparent
                    mb-6
@@ -32,7 +45,7 @@ const Contact = () => {
                    `}
               >
                 &lt;Contáctame /&gt;
-              </h2>
+              </h2> */}
             </div>
           </div>
           <div className="w-full px-4 ">
@@ -146,6 +159,7 @@ const Contact = () => {
         </div>
       </div>
     </section>
+    </>
   );
 };
 
