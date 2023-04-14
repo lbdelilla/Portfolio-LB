@@ -6,6 +6,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import Commeet from "../../public/images/logoColor.png";
+import Portfolio from "../../public/images/Portfolio/Home-Light.png"
 import Disney from "../../public/images/disney.png";
 import { motion } from "framer-motion"
 import TransitionEffect from "@/components/transitionEffect";
@@ -166,7 +167,7 @@ const Projects = () => {
               <Project
                 title="Portfolio"
                 summary1="Mi portafolio profesional es una plataforma en línea que muestra mi experiencia laboral, proyectos y habilidades relevantes en mi campo.Este portafolio proporciona información detallada sobre mis habilidades técnicas, habilidades blandas y logros en mi carrera."
-                img={Commeet}
+                img={Portfolio}
                 link="/"
                 github="https://github.com/lbdelilla/"
                 type="HTML5 | Tailwind CSS | Javascript | Next JS | Framer Motion "
