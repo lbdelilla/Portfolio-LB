@@ -5,35 +5,18 @@ import AnimatedText from "@/components/animatedText";
 import Head from "next/head";
 import TransitionEffect from "@/components/transitionEffect";
 
-const coveredByYourGrace = Covered_By_Your_Grace({
-  weight: "400",
-  subsets: ["latin"],
-  variable: "--font-cover",
-});
 
 const Contact = () => {
+
   const [state, handleSubmit] = useForm("xqkogwbo");
+
   if (state.succeeded) {
-    return ( <section className="bg-light dark:bg-dark py-20 lg:py-[120px] overflow-hidden relative z-10">
+    return ( <section className="bg-light dark:bg-dark xl:py-20 xs:py-6 lg:py-16 md:py-10 overflow-hidden relative z-10">
     <div className="container">
       <div className="flex flex-wrap  ">
-        <div className="w-full  px-4 ">
+        <div className="w-full xs:px-2 sm:px-3 lg:px-4 xl:px-4   ">
           <div className="w-full mb-12 lg:mb-0">
-            <AnimatedText text="  &lt;Contáctame /&gt;" className="text-center"/>
-            {/* <h2
-              className={`${coveredByYourGrace.variable} font-cover
-                 bg-gradient-to-r from-orange-400 to-purple-600 bg-clip-text text-transparent
-                 mb-6
-                 font-bold
-                 text-center
-                 text-5xl
-                 sm:text-3xl
-                 lg:text-4xl
-                 xl:text-5xl
-                 `}
-            >
-              &lt;Contáctame /&gt;
-            </h2> */}
+            <AnimatedText text="  &lt;Contáctame /&gt;" className="text-center xs:mb-3"/>
           </div>
         </div>
         <div className="w-full px-4 ">
@@ -158,31 +141,17 @@ const Contact = () => {
           content="Portfolio profesional de Lucía Belén, Desarrolladora de Software"
         />
       </Head>
-    <section className="bg-light dark:bg-dark py-20 lg:py-[120px] overflow-hidden relative z-10">
+    <section className="bg-light dark:bg-dark py-20 xs:py-10 lg:py-15 overflow-hidden relative z-10">
       <TransitionEffect/>
       <div className="container">
         <div className="flex flex-wrap  ">
-          <div className="w-full  px-4 ">
-            <div className="w-full mb-12 lg:mb-0">
-              <AnimatedText text="  &lt;Contáctame /&gt;" className="text-center"/>
-              {/* <h2
-                className={`${coveredByYourGrace.variable} font-cover
-                   bg-gradient-to-r from-orange-400 to-purple-600 bg-clip-text text-transparent
-                   mb-6
-                   font-bold
-                   text-center
-                   text-5xl
-                   sm:text-3xl
-                   lg:text-4xl
-                   xl:text-5xl
-                   `}
-              >
-                &lt;Contáctame /&gt;
-              </h2> */}
+          <div className="w-full  px-4">
+            <div className="w-full mb-12 md:mb-8 lg:mb-0">
+              <AnimatedText text="  &lt;Contáctame /&gt;" className=" xs:mb-5 md:mb-5 lg:mb-5 text-center"/>
             </div>
           </div>
           <div className="w-full px-4 ">
-            <div className="bg-light  dark:bg-dark relative rounded-3xl   p-8 sm:p-12 shadow-lg w-1/2 mx-auto sm:w-full sm:max-w-md border-solid border border-dark dark:border-light">
+            <div className="bg-light  dark:bg-dark relative rounded-3xl xs:p-4  p-8 sm:p-12 shadow-lg w-1/2 mx-auto sm:w-full sm:max-w-md border-solid border border-dark dark:border-light">
               <div className="md:-right-2 md:w-[101%] xs:h-[101%] xs:rounded-[1.5rem] absolute top-0 -right-3 -z-10 w-[102%] h-[102%] rounded-[2.5rem] bg-gradient-to-r from-orange-400 to-purple-600 border border-solid border-dark rounded-br-3xl dark:border-light" />
 
               <form onSubmit={handleSubmit}>
