@@ -1,16 +1,15 @@
 import React from "react";
 import { useForm, ValidationError } from "@formspree/react";
-import { Covered_By_Your_Grace } from "next/font/google";
 import AnimatedText from "@/components/animatedText";
 import Head from "next/head";
 import TransitionEffect from "@/components/transitionEffect";
 
 
 const Contact = () => {
+  const FORM_ID = "xqkogwbo";
+  const [formState, handleSubmit] = useForm(FORM_ID);
 
-  const [state, handleSubmit] = useForm("xqkogwbo");
-
-  if (state.succeeded) {
+  if (formState.succeeded) {
     return ( <section className="bg-light dark:bg-dark xl:py-20 xs:py-6 lg:py-16 md:py-10 overflow-hidden relative z-10">
     <div className="container">
       <div className="flex flex-wrap  ">
@@ -64,7 +63,7 @@ const Contact = () => {
                 <ValidationError
                   prefix="Email"
                   field="email"
-                  errors={state.errors}
+                  errors={formState.errors}
                 />
               </div>
               <div className="mb-6">
@@ -106,7 +105,7 @@ const Contact = () => {
                 <ValidationError
                   prefix="Message"
                   field="message"
-                  errors={state.errors}
+                  errors={formState.errors}
                 />
               </div>
               <div>
@@ -121,7 +120,7 @@ const Contact = () => {
                        font-semibold 
                        hover:scale-105
                        "
-                       disabled={state.submitting}>
+                       disabled={formState.submitting}>
                   Enviar Mensaje
                 </button>
               </div>
@@ -194,7 +193,7 @@ const Contact = () => {
                   <ValidationError
                     prefix="Email"
                     field="email"
-                    errors={state.errors}
+                    errors={formState.errors}
                   />
                 </div>
                 <div className="mb-6">
@@ -236,7 +235,7 @@ const Contact = () => {
                   <ValidationError
                     prefix="Message"
                     field="message"
-                    errors={state.errors}
+                    errors={formState.errors}
                   />
                 </div>
                 <div>
@@ -251,7 +250,7 @@ const Contact = () => {
                          font-semibold 
                          hover:scale-105
                          "
-                         disabled={state.submitting}>
+                         disabled={formState.submitting}>
                     Enviar Mensaje
                   </button>
                 </div>

@@ -21,6 +21,7 @@ const Project = ({ type, title, summary1, summary2, img, link, github }) => {
       <Link
         href={link}
         target="_blank"
+        rel="noopener noreferrer"
         className="w-full cursor-pointer overflow-hidden rounded-lg "
       >
         <Image src={img} alt={title} className="w-full h-auto rounded "  priority={true}
@@ -33,6 +34,7 @@ const Project = ({ type, title, summary1, summary2, img, link, github }) => {
         <Link
           href={link}
           target="_blank"
+          rel="noopener noreferrer"
           className="hover:underline underline-offset-2"
         >
           <h2 className="my-2 w-full text-left text-xl font-bold ">{title}</h2>
@@ -43,7 +45,8 @@ const Project = ({ type, title, summary1, summary2, img, link, github }) => {
         <div className="mt-2 flex items-center">
         <motion.a
            href={github}
-            target={"_blank"}
+            target="_blank"
+            rel="noopener noreferrer"
             className="w-8 md:w-6"
             whileHover={{ y: -2 }}
             whileTap={{ scale: 0.2 }}
@@ -81,6 +84,7 @@ const FeatureProject = ({
       <Link
         href={link}
         target="_blank"
+        rel="noopener noreferrer"
         className="w-1/2 cursor-pointer overflow-hidden rounded-lg lg:w-full"
       >
         <Image src={img} alt={title} className="w-full h-auto"  priority={true}
@@ -93,6 +97,7 @@ const FeatureProject = ({
         <Link
           href={link}
           target="_blank"
+          rel="noopener noreferrer"
           className="hover:underline underline-offset-2"
         >
           <h2 className="my-2 w-full text-left text-2xl font-bold sm:text-sm">{title}</h2>
@@ -104,6 +109,7 @@ const FeatureProject = ({
           <motion.a
            href={github}
             target={"_blank"}
+            rel="noopener noreferrer"
             className="w-10"
             whileHover={{ y: -2 }}
             whileTap={{ scale: 0.2 }}
@@ -113,6 +119,7 @@ const FeatureProject = ({
           <Link
             href={link}
             target="_blank"
+            rel="noopener noreferrer"
             className="sm-px-4 sm:text-base ml-4 rounded-lg bg-dark text-light p-1 px-6 text-lg font-semibold hover:text-primary dark:bg-light dark:text-dark dark:hover:text-primary"
           >
             Visitar{" "}

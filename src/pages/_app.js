@@ -2,14 +2,11 @@ import Footer from "@/components/footer";
 import NavBar from "@/components/navbar";
 import "@/styles/globals.css";
 import { AnimatePresence } from "framer-motion";
-import { Montserrat } from "next/font/google";
+import { montserrat } from "../components/fonts.js";
 import Head from "next/head";
 import { useRouter } from "next/router";
 
-const montserrat = Montserrat({
-  subsets: ["latin"],
-  variable: "--font-mont",
-});
+
 
 export default function App({ Component, pageProps }) {
   const router = useRouter();

@@ -6,7 +6,7 @@ import { Layout } from "@/components/layout";
 import Skills from "@/components/skills";
 import AnimatedText from "@/components/animatedText";
 import TransitionEffect from "@/components/transitionEffect";
-
+import textContent from "../components/textContent.json";
 
 
 const About = () => {
@@ -31,19 +31,10 @@ const About = () => {
           <div className="w-1/2 lg:w-full">
           <AnimatedText text="&lt;Sobre Mi /&gt;"/>
           <p className="pt-5 text-l text-gray-600 text-justify align-middle dark:text-light md:text-sm sm:text-xs">
-            {" "}
-            Soy Uruguaya y resido actualmente en España. Licenciada en
-            Comunicación Social con énfasis en Publicidad de la Universidad
-            Católica del Uruguay y Fullstack Software Developer de 4Geeks
-            Academy. Tengo más de 5 años de experiencia marketing y comunicación
-            pero a comienzos del 2022 decidí reorientarme e ingresar a un campo
-            que me interesaba mucho hacia un tiempo, la programación. </p>
+            {textContent.aboutText}
+            </p>
             <p className="pt-5 text-l text-gray-600 text-justify align-middle dark:text-light md:text-sm sm:text-xs">
-            No me arrepiento, estoy enamorada de este mundo y todo lo que trae,
-            dolores de cabeza incluidos jaja. Siempre fui muy autodidacta y
-            altamente comprometida con mi desarrollo profesional entregando el
-            100% a cada proyecto en el que me embarco. Desde pequeña me encanta
-            crear cosas, así que encontré una nueva manera de hacerlo.
+            {textContent.aboutTextCont}
           </p>
           </div>
         </div>
