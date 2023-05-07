@@ -1,0 +1,62 @@
+{
+    "navLinks": {
+    "home": "Home",
+    "about": "About Me",
+    "projects": "Projects",
+    "contact": "Contact Me"
+    },
+    "pageTitles": {
+    "home": "< Who I Am />",
+    "about": "< About Me />",
+    "projects": "< My Projects />",
+    "contact": "< Contact Me />"
+    },
+    "footer": {
+    "rights": "All Rights Reserved",
+    "madeBy": "Made with",
+    "madeByCont": "by"
+    },
+    "home": {
+    "introText": "Hello! My name is Lucia and I'm a Fullstack software developer and Bachelor of Social Communication. My passion for creating aesthetically pleasing and functional websites arises from a desire to improve the web experience for users.",
+    "contactText": "If you're looking for a web developer dedicated to producing high-quality work and always looking to improve, don't hesitate to take a look at my portfolio and get in touch.",
+    "homeBtn": "Resume"
+    },
+    "about": {
+    "aboutText": "I am Uruguayan and currently reside in Spain. I hold a Bachelor's degree in Social Communication with an emphasis in Advertising from the Catholic University of Uruguay and am a Fullstack Software Developer from 4Geeks Academy. I have over 5 years of experience in marketing and communication, but at the beginning of 2022, I decided to reorient myself and enter a field that had interested me for a long time, programming.",
+    "aboutTextCont": "I don't regret it, I'm in love with this world and everything it brings, headaches included haha. I have always been very self-taught and highly committed to my professional development, giving 100% to each project I undertake. Since I was little, I have loved creating things, so I found a new way to do it.",
+    "technologies": "<Technologies/>"
+    },
+    "projects": {
+    "projectBtn": "Visit",
+    "project1": {
+        "title": "ComMeet - Event Planner",
+        "info": "Do you get stressed every time you have to plan an event and find yourself needing to create WhatsApp groups to keep everyone updated? We have the perfect solution for you! With ComMeet, you can manage your contacts, send invitations, and get attendance confirmations (RSVP).",
+        "infoCont": "Plus, you can chat directly with your guests on the platform, avoiding the need to create multiple chat groups. Let our event planner help you organize your events easily and stress-free!"
+    },
+    "project2": {
+        "title": "Disney - Fun & Games",
+        "info": "Welcome to the magical world of Disney! On this page, you can meet your favorite Disney characters and see their detailed information. Additionally, you can have fun with Disney games and store your favorite characters in a personalized list. As if that weren't enough, you can also watch exclusive videos and celebrate Disney's 100 years of magic with us. Dive into the Disney universe and have the most fun!"
+    },
+    "project3": {
+        "title": "Portfolio",
+        "info": "My professional portfolio is an online platform that showcases my work experience, projects, and relevant skills in my field. This portfolio provides detailed information about my technical skills, soft skills, and career achievements."
+    }
+    },
+    "contactMe": {
+        "labels": {
+        "name": "Name",
+        "email": "Email",
+        "phone": "Phone",
+        "message": "Message"
+        },
+        "placeholder":{
+            "name": "Name",
+            "email": "example@example.com",
+            "phone": "+34.........",
+            "message": "Write your message here..."
+        },
+        "formBtn": "Send Message",
+        "formMessage": "Thank you for writing to me! I will get in touch with you as soon as possible."
+    }
+
+  }

@@ -1,0 +1,62 @@
+{
+    "navLinks": {
+        "home": "Inicio",
+        "about": "Sobre Mi",
+        "projects": "Proyectos",
+        "contact": "Contáctame"
+    },
+    "pageTitles":{
+        "home": "< Quién Soy />" ,
+        "about":"< Sobre Mi />",
+        "projects": "< Mis Proyectos />",
+        "contact": "< Contáctame />"
+    },
+    "footer": {
+        "rights": "Derechos Reservados",
+        "madeBy": "Creado con",
+        "madeByCont": "por"
+    },
+    "home":{
+        "introText": "¡Hola! Mi nombre es Lucía y soy Fullstack software developer y Licenciada en Comunicación Social. Mi pasión por crear sitios web estéticamente agradables y funcionales surge de un deseo de mejorar la experiencia web para los usuarios.",
+        "contactText": "Si estás buscando una desarrolladora web dedicada a producir trabajo de alta calidad y que siempre está buscando mejorar, no dudes en echar un vistazo a mi portafolio y ponerte en contacto.",
+        "homeBtn": "Currículum"
+    },
+    "about":{
+        "aboutText": " Soy Uruguaya y resido actualmente en España. Licenciada en Comunicación Social con énfasis en Publicidad de la Universidad Católica del Uruguay y Fullstack Software Developer de 4Geeks Academy. Tengo más de 5 años de experiencia marketing y comunicación pero a comienzos del 2022 decidí reorientarme e ingresar a un campo que me interesaba mucho hacia un tiempo, la programación.",
+        "aboutTextCont": "No me arrepiento, estoy enamorada de este mundo y todo lo que trae, dolores de cabeza incluidos jaja. Siempre fui muy autodidacta y altamente comprometida con mi desarrollo profesional entregando el 100% a cada proyecto en el que me embarco. Desde pequeña me encanta crear cosas, así que encontré una nueva manera de hacerlo.",
+        "technologies":"< Tecnologías />"
+    },
+    "projects": {
+        "projectBtn": "Visitar", 
+        "project1":{
+            "title": "ComMeet - Planificador de Eventos",
+            "info": "¿Te estresas cada vez que tienes que planear un evento y te encuentras con la necesidad de crear grupos de WhatsApp para mantener a todos actualizados? ¡Tenemos la solución perfecta para ti! Con ComMeet puedes gestionar tus contactos, enviar invitaciones y obtener confirmaciones de asistencia (RSVP).",
+            "infoCont": "Además, puedes conversar directamente con tus invitados en la plataforma, evitando la necesidad de crear múltiples grupos de chat. ¡Deja que nuestro planificador de eventos te ayude a organizar tus eventos de manera fácil y sin estrés!"
+        },
+        "project2":{
+            "title": "Disney - Fun & Games",
+            "info": "¡Bienvenidos al mundo mágico de Disney! En esta página podrás conocer a tus personajes favoritos de Disney y ver su información detallada. Además, podrás divertirte con los juegos de Disney y almacenar tus personajes favoritos en una lista personalizada. Como si esto fuera poco, también podrás ver videos exclusivos y celebrar con nosotros los 100 años de magia de Disney. ¡Sumérgete en el universo de Disney y diviértete al máximo!"
+        },
+        "project3":{
+            "title": "Portfolio",
+            "info": "Mi portafolio profesional es una plataforma en línea que muestra mi experiencia laboral, proyectos y habilidades relevantes en mi campo.Este portafolio proporciona información detallada sobre mis habilidades técnicas, habilidades blandas y logros en mi carrera."
+        }
+    },
+    "contactMe":{
+        "labels":{
+            "name": "Nombre",
+            "email": "Correo Electrónico",
+            "phone": "Teléfono",
+            "message": "Mensaje"
+        },
+        "placeholder":{
+            "name": "Nombre",
+            "email": "ejemplo@ejemplo.com",
+            "phone": "+34.........",
+            "message": "Te leo..."
+        },
+        "formBtn": "Enviar Mensaje",
+        "formMessage": " Gracias por escribirme! Me pondré en contacto contigo lo antes posible."
+    }
+
+  }
