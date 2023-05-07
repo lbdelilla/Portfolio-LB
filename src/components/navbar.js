@@ -2,7 +2,6 @@ import Link from "next/link";
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { coveredByYourGrace } from "./fonts.js";
-import { SunIcon, MoonIcon } from "./icons";
 import useThemeSwitcher from "./Hooks/useThemeSwitcher";
 import { CustomLink, CustomMobileLink } from "./customLinks";
 
