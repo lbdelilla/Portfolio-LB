@@ -5,7 +5,6 @@ import Lucia from "../../public/images/profile/lb-profile.png";
 import AnimatedText from "@/components/animatedText";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { LinkArrow } from "@/components/icons";
 import TransitionEffect from "@/components/transitionEffect";
 import textContent from "../components/textContent.json";
 
@@ -48,7 +47,7 @@ export default function Home() {
              to-purple-600 text-light p-2 px-5 rounded-lg xl:text-lg lg:text-lg md:text-md sm:text-sm xs:text-xs font-semibold hover:scale-105 md:p-2 md:px-4 md:text-base sm:p-1 sm:px-3 sm:hover-none"
                   download={true}
                 >
-                  Currículum <LinkArrow className={"w-6 ml-1"} />
+                  Currículum <i class="fa-solid fa-arrow-up-right-from-square w-6 ml-1"></i>
                 </Link>
               </div>
             </div>

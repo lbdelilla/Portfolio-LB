@@ -83,18 +83,16 @@ const NavBar = () => {
             whileTap={{ scale: 0.2 }}
           >
             <i class="fa-brands fa-github text-2xl dark:bg-light dark:rounded-full dark:w-7 dark:pl-1 dark:text-xl text-orange-400"></i>
-            {/* <GithubIcon fill="#F0884E" /> */}
           </motion.a>
           <motion.a
             href="https://www.linkedin.com/in/luciabelen/"
-            target={"_blank"}
+            target="_blank"
             rel="noopener noreferrer"
             className="mx-2"
             whileHover={{ y: -2 }}
             whileTap={{ scale: 0.2 }}
           >
-            <i class="fa-brands fa-linkedin text-2xl dark:bg-light dark:rounded-full dark:w-7 dark:pl-1 dark:text-xl text-fuchsia-700"></i>
-            {/* <LinkedInIcon/> */}
+            <i class="fa-brands fa-linkedin text-2xl dark:bg-light dark:rounded-full dark:w-7 dark:text-xl text-fuchsia-700 " style={{ padding: '0px 2px 0px 5px', '@media (prefers-color-scheme: dark)': { padding: '1px 3px' } }}></i>
           </motion.a>
           <motion.a
             href="mailto:lbdelilla@gmail.com"
@@ -105,7 +103,6 @@ const NavBar = () => {
             whileTap={{ scale: 0.2 }}
           >
             <i class="fa-solid fa-envelope text-2xl dark:bg-light dark:rounded-full dark:w-7 dark:pl-1 dark:text-xl text-purple-600"></i>
-            {/* <Email/> */}
           </motion.a>
 
           <button
@@ -115,9 +112,9 @@ const NavBar = () => {
             }`}
           >
             {mode === "dark" ? (
-              <SunIcon className={"fill-dark"} />
+              <i class="fa-solid fa-sun text-dark text-lg" style={{ padding: '1px 6px 1px 6px' }}></i>
             ) : (
-              <MoonIcon className={"fill-light"} />
+              <i class="fa-solid fa-moon text-light text-lg" style={{ padding: '1px 7px 1px 7px' }}></i>
             )}
           </button>
         </nav>
@@ -167,18 +164,16 @@ const NavBar = () => {
               whileTap={{ scale: 0.2 }}
             >
               <i class="fa-brands fa-github text-orange-400 "></i>
-              {/* <GithubIcon fill="#da5d18" /> */}
             </motion.a>
             <motion.a
               href="https://www.linkedin.com/in/lbdelilla"
               target={"_blank"}
               rel="noopener noreferrer"
-              className="mx-4 bg-light rounded-full  w-6 pl-1 sm:mx-1"
+              className="mx-2 bg-light rounded-full  w-6 sm:mx-1"
               whileHover={{ y: -2 }}
               whileTap={{ scale: 0.2 }}
             >
-              <i class="fa-brands fa-linkedin text-fuchsia-700 "></i>
-              {/* <LinkedInIcon/> */}
+              <i class="fa-brands fa-linkedin text-fuchsia-700 " style={{ padding: '1px 5px 1px 5px' }}></i>
             </motion.a>
             <motion.a
               href="mailto:lbdelilla@gmail.com"
@@ -189,19 +184,18 @@ const NavBar = () => {
               whileTap={{ scale: 0.2 }}
             >
               <i class="fa-solid fa-envelope text-purple-600 "></i>
-              {/* <Email/> */}
             </motion.a>
 
             <button
               onClick={() => setMode(mode === "light" ? "dark" : "light")}
-              className={`ml-4 flex items-center justify-center rounded-full p-1 ${
-                mode === "light" ? "bg-dark text-light" : "bg-light text-dark"
+              className={`ml-1 flex items-center justify-center rounded-full  ${
+                mode === "light" ? "bg-light text-light" : "bg-light text-dark"
               }`}
             >
               {mode === "dark" ? (
-                <SunIcon className={"fill-dark"} />
+                <i class="fa-solid fa-sun text-dark text-base" style={{ padding: '1px 4px 1px 4px' }}></i>
               ) : (
-                <MoonIcon className={"fill-light"} />
+                <i class="fa-solid fa-moon text-dark text-base" style={{ padding: '1px 6px 1px 6px' }}></i>
               )}
             </button>
           </nav>
