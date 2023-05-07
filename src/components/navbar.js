@@ -4,13 +4,18 @@ import { motion } from "framer-motion";
 import { coveredByYourGrace } from "./fonts.js";
 import useThemeSwitcher from "./Hooks/useThemeSwitcher";
 import { CustomLink, CustomMobileLink } from "./customLinks";
-
+import en from "../components/translations/en.json";
+import es from "../components/translations/es.json";
+import { useRouter } from "next/router";
 
 const MotionLink = motion(Link);
 
 const NavBar = () => {
   const [mode, setMode] = useThemeSwitcher();
   const [isOpen, setIsOpen] = useState(false);
+  const {asPath, locale, locales} = useRouter()
+
+  const t = locale === "es" ? es : en;
 
   const handleClick = () => {
     setIsOpen(!isOpen);
@@ -67,10 +72,10 @@ const NavBar = () => {
 
       <div className="w-full flex justify-between items-center lg:hidden xl:hidden">
         <nav>
-          <CustomLink href="/" title="Inicio" className="mr-4 " />
-          <CustomLink href="/about" title="Sobre Mi" className="mx-4 " />
-          <CustomLink href="/projects" title="Proyectos" className="mx-4 " />
-          <CustomLink href="/contact" title="Contáctame" className="ml-4 " />
+          <CustomLink href="/" title={t.navLinks.home} className="mr-4 " />
+          <CustomLink href="/about" title={t.navLinks.about} className="mx-4 " />
+          <CustomLink href="/projects" title={t.navLinks.projects} className="mx-4 " />
+          <CustomLink href="/contact" title={t.navLinks.contact} className="ml-4 " />
         </nav>
         <nav className="flex items-center justify-center flex-wrap">
           <motion.a
@@ -130,25 +135,25 @@ const NavBar = () => {
           <nav className="flex items-center flex-col justify-center">
             <CustomMobileLink
               href="/"
-              title="Inicio"
+              title={t.navLinks.home}
               className=""
               toggle={handleClick}
             />
             <CustomMobileLink
               href="/about"
-              title="Sobre Mi"
+              title={t.navLinks.about}
               className=""
               toggle={handleClick}
             />
             <CustomMobileLink
               href="/projects"
-              title="Proyectos"
+              title={t.navLinks.projects}
               className=""
               toggle={handleClick}
             />
             <CustomMobileLink
               href="/contact"
-              title="Contáctame"
+              title={t.navLinks.contact}
               className=""
               toggle={handleClick}
             />

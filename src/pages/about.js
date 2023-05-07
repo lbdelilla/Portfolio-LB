@@ -6,10 +6,14 @@ import { Layout } from "@/components/layout";
 import Skills from "@/components/skills";
 import AnimatedText from "@/components/animatedText";
 import TransitionEffect from "@/components/transitionEffect";
-import textContent from "../components/textContent.json";
-
+import en from "../components/translations/en.json";
+import es from "../components/translations/es.json";
+import { useRouter } from "next/router";
 
 const About = () => {
+  const {asPath, locale, locales} = useRouter()
+  const t = locale === "es" ? es : en;
+
   return (
     <>
       <Head>
@@ -29,12 +33,12 @@ const About = () => {
                        50vh"></Image>
           </div>
           <div className="w-1/2 lg:w-full">
-          <AnimatedText text="&lt;Sobre Mi /&gt;"/>
+          <AnimatedText text={t.pageTitles.about}/>
           <p className="pt-5 text-l text-gray-600 text-justify align-middle dark:text-light md:text-sm sm:text-xs">
-            {textContent.aboutText}
+            {t.about.aboutText}
             </p>
             <p className="pt-5 text-l text-gray-600 text-justify align-middle dark:text-light md:text-sm sm:text-xs">
-            {textContent.aboutTextCont}
+            {t.about.aboutTextCont}
           </p>
           </div>
         </div>

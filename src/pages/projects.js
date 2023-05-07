@@ -9,11 +9,16 @@ import Portfolio from "../../public/images/Portfolio/Home-Light.png"
 import Disney from "../../public/images/disney.png";
 import { motion } from "framer-motion"
 import TransitionEffect from "@/components/transitionEffect";
-
+import en from "../components/translations/en.json";
+import es from "../components/translations/es.json";
+import { useRouter } from "next/router";
 
 
 const Project = ({ type, title, summary1, summary2, img, link, github }) => {
-
+  
+  const {asPath, locale, locales} = useRouter()
+  const t = locale === "es" ? es : en;
+  
   return (
     <article className="xs:p-4 w-full flex flex-col items-center justify-center rounded-3xl border border-solid border-dark bg-light p-6 relative rounded-br-2xl dark:bg-dark dark:text-light dark:border-light ">
       <div className="md:-right-2 md:w-[101%] xs:h-[101%] xs:rounded-[1.5rem] absolute top-0 -right-3 -z-10 w-[102%] h-[102%] rounded-[2.5rem] bg-gradient-to-r from-orange-400 to-purple-600 border border-solid border-dark rounded-br-3xl dark:border-light" />
@@ -57,7 +62,7 @@ const Project = ({ type, title, summary1, summary2, img, link, github }) => {
             target="_blank"
             className="md:text-base ml-4 rounded-lg bg-dark text-light p-1 px-4 text-sm font-semibold hover:text-primary dark:bg-light dark:text-dark dark:hover:text-primary"
           >
-            Visitar{" "}
+           {t.projects.projectBtn}
           </Link>
         </div>
       </div>
@@ -74,6 +79,10 @@ const FeatureProject = ({
   link,
   github,
 }) => {
+
+  const {asPath, locale, locales} = useRouter()
+  const t = locale === "es" ? es : en;
+
   return (
     <article className="p-10 w-full flex items-center justify-between rounded-3xl border border-solid border-dark bg-light shadow-2xl 
     relative rounded-br-2xl  dark:bg-dark dark:text-light dark:border-light lg:flex-col lg:p-8 xs:rounded-2xl xs:rounded-br-2xl xs:p-4">
@@ -121,7 +130,7 @@ const FeatureProject = ({
             rel="noopener noreferrer"
             className="sm-px-4 sm:text-base ml-4 rounded-lg bg-dark text-light p-1 px-6 text-lg font-semibold hover:text-primary dark:bg-light dark:text-dark dark:hover:text-primary"
           >
-            Visitar{" "}
+            {t.projects.projectBtn}
           </Link>
         </div>
       </div>
@@ -130,6 +139,10 @@ const FeatureProject = ({
 };
 
 const Projects = () => {
+
+  const {asPath, locale, locales} = useRouter()
+  const t = locale === "es" ? es : en;
+
   return (
     <>
       <Head>
@@ -143,16 +156,16 @@ const Projects = () => {
       <main className="w-full mb-16 flex flex-col items-center justify center">
         <Layout className="pt-16">
           <AnimatedText
-            text="&lt;Mis Proyectos /&gt;"
+            text={t.pageTitles.projects}
             className="mb-10 text-center"
           />
 
           <div className="grid grid-col-cols-12 gap-24 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0 ">
             <div className="col-span-12">
               <FeatureProject
-                title="ComMeet - Planificador de Eventos"
-                summary1="¿Te estresas cada vez que tienes que planear un evento y te encuentras con la necesidad de crear grupos de WhatsApp para mantener a todos actualizados? ¡Tenemos la solución perfecta para ti! Con ComMeet puedes gestionar tus contactos, enviar invitaciones y obtener confirmaciones de asistencia (RSVP)."
-                summary2="Además, puedes conversar directamente con tus invitados en la plataforma, evitando la necesidad de crear múltiples grupos de chat. ¡Deja que nuestro planificador de eventos te ayude a organizar tus eventos de manera fácil y sin estrés!"
+                title={t.projects.project1.title}
+                summary1={t.projects.project1.info}
+                summary2={t.projects.project1.infoCont}
                 img={Commeet}
                 link="https://sample-service-name-r5bf.onrender.com/"
                 github="https://github.com/lbdelilla/Commeet-EventPlanner"
@@ -161,8 +174,8 @@ const Projects = () => {
             </div>
             <div className="col-span-6 sm:col-span-12">
               <Project
-                title="Disney - Fun & Games"
-                summary1="¡Bienvenidos al mundo mágico de Disney! En esta página podrás conocer a tus personajes favoritos de Disney y ver su información detallada. Además, podrás divertirte con los juegos de Disney y almacenar tus personajes favoritos en una lista personalizada. Como si esto fuera poco, también podrás ver videos exclusivos y celebrar con nosotros los 100 años de magia de Disney. ¡Sumérgete en el universo de Disney y diviértete al máximo!"
+                title={t.projects.project2.title}
+                summary1={t.projects.project2.info}
                 img={Disney}
                 link="https://disney-blog-react-flask.vercel.app/"
                 github="https://github.com/lbdelilla/Disney-Blog-React-Flask"
@@ -171,8 +184,8 @@ const Projects = () => {
             </div>
             <div className="col-span-6  sm:col-span-12">
               <Project
-                title="Portfolio"
-                summary1="Mi portafolio profesional es una plataforma en línea que muestra mi experiencia laboral, proyectos y habilidades relevantes en mi campo.Este portafolio proporciona información detallada sobre mis habilidades técnicas, habilidades blandas y logros en mi carrera."
+                title={t.projects.project3.title}
+                summary1={t.projects.project3.info}
                 img={Portfolio}
                 link="/"
                 github="https://github.com/lbdelilla/"
