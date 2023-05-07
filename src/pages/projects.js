@@ -1,5 +1,4 @@
 import AnimatedText from "@/components/animatedText";
-import { GithubIcon } from "@/components/icons";
 import { Layout } from "@/components/layout";
 import Head from "next/head";
 import Image from "next/image";
@@ -47,11 +46,11 @@ const Project = ({ type, title, summary1, summary2, img, link, github }) => {
            href={github}
             target="_blank"
             rel="noopener noreferrer"
-            className="w-8 md:w-6"
+            className=" dark:bg-light dark:rounded-full dark:px-1"
             whileHover={{ y: -2 }}
             whileTap={{ scale: 0.2 }}
           >
-            <GithubIcon fill="#C35F98" />
+            <i class="fa-brands fa-github text-3xl text-orange-500"></i>
           </motion.a>
           <Link
             href={link}
@@ -110,11 +109,11 @@ const FeatureProject = ({
            href={github}
             target={"_blank"}
             rel="noopener noreferrer"
-            className="w-10"
+            className=" dark:bg-light dark:rounded-full dark:px-0.5"
             whileHover={{ y: -2 }}
             whileTap={{ scale: 0.2 }}
           >
-            <GithubIcon fill="#C35F98" />
+            <i class="fa-brands fa-github text-4xl text-orange-500"></i>
           </motion.a>
           <Link
             href={link}
