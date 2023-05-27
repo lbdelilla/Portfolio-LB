@@ -3,6 +3,9 @@ import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { useRouter } from "next/router";
+import es from "../../../components/translations/es";
+import en from "../../../components/translations/en";
+
 
 const FeatureProject = ({
     type,
