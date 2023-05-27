@@ -7,6 +7,7 @@ import React from "react";
 import Commeet from "../../public/images/logoCOLOR.png";
 import Portfolio from "../../public/images/Portfolio/Home-Light.png"
 import Disney from "../../public/images/disney.png";
+import Adriana from "../../public/images/adriana.png"
 import { motion } from "framer-motion"
 import TransitionEffect from "@/components/transitionEffect";
 import en from "../components/translations/en.json";
