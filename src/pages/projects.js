@@ -182,6 +182,15 @@ const Projects = () => {
                 type="HTML5 | CSS3 | Bootstrap | Javascript | Python | Flask | SqlAlchemy | PostgreSQL"
               />
             </div>
+            <div className="col-span-6 sm:col-span-12">
+            <Project
+                title={t.projects.project4.title}
+                summary1={t.projects.project4.info}
+                img={Adriana}
+                link="https://www.adrianadelilla.es/"
+                github="https://github.com/lbdelilla/adriana_de_lilla"
+                type="HTML5 | CSS3 | Bootstrap | Javascript"              />
+            </div>
             <div className="col-span-6  sm:col-span-12">
               <Project
                 title={t.projects.project3.title}

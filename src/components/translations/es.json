@@ -40,6 +40,10 @@
         "project3":{
             "title": "Portfolio",
             "info": "Mi portafolio profesional es una plataforma en línea que muestra mi experiencia laboral, proyectos y habilidades relevantes en mi campo.Este portafolio proporciona información detallada sobre mis habilidades técnicas, habilidades blandas y logros en mi carrera."
+        },
+        "project4": {
+            "title": "Adriana De Lilla´s Sitio Personal",
+            "info": "Descubre el mundo del bienestar y la sanación a través de este sitio web personal. Aquí podrás conocer a Adriana De Lilla, una terapeuta holística que te ayudará a encontrar tu equilibrio físico, mental y emocional. Además, podrás conocer los servicios que ofrece y reservar una cita con ella. Además este sitio ofrece una experiencia interactiva tanto en castellano como en valenciano. ¡No te pierdas esta oportunidad de mejorar tu calidad de vida!. "
         }
     },
     "contactMe":{
