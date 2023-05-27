@@ -10,8 +10,9 @@ import TransitionEffect from "@/components/transitionEffect";
 import en from "../../components/translations/en.json";
 import es from "../../components/translations/es.json";
 import { useRouter } from "next/router";
-import  FeatureProject  from "./components/featureProject";
-import  Project  from "./components/project";
+import FeatureProject from "./components/featureProject";
+import Project from "./components/project";
+
 
 
 
@@ -48,6 +49,7 @@ const Projects = () => {
                 link="https://sample-service-name-r5bf.onrender.com/"
                 github="https://github.com/lbdelilla/Commeet-EventPlanner"
                 type="HTML5 | CSS3 | Bootstrap | Javascript | Python | Flask | SqlAlchemy | PostgreSQL"
+                button={t.projects.projectBtn}
               />
             </div>
             <div className="col-span-6 sm:col-span-12">
@@ -58,6 +60,7 @@ const Projects = () => {
                 link="https://disney-blog-react-flask.vercel.app/"
                 github="https://github.com/lbdelilla/Disney-Blog-React-Flask"
                 type="HTML5 | CSS3 | Bootstrap | Javascript | Python | Flask | SqlAlchemy | PostgreSQL"
+                button={t.projects.projectBtn}
               />
             </div>
             <div className="col-span-6 sm:col-span-12">
@@ -68,6 +71,7 @@ const Projects = () => {
                 link="https://www.adrianadelilla.es/"
                 github="https://github.com/lbdelilla/adriana_de_lilla"
                 type="HTML5 | CSS3 | Bootstrap | Javascript"
+                button={t.projects.projectBtn}
               />
             </div>
             <div className="col-span-6  sm:col-span-12">
@@ -78,6 +82,7 @@ const Projects = () => {
                 link="/"
                 github="https://github.com/lbdelilla/"
                 type="HTML5 | Tailwind CSS | Javascript | Next JS | Framer Motion "
+                button={t.projects.projectBtn}
               />
             </div>
           </div>

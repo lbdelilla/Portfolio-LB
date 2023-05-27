@@ -2,14 +2,10 @@ import React from 'react'
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { useRouter } from "next/router";
-import es from "../../../components/translations/es";
-import en from "../../../components/translations/en";
 
 
-export const Project = ({ type, title, summary1, summary2, img, link, github }) => {
-    const { locale } = useRouter();
-    const t = locale === "es" ? es : en;
+export const Project = ({ type, title, summary1, summary2, img, link, github, button }) => {
+
   
     return (
       <article className="xs:p-4 w-full flex flex-col items-center justify-center rounded-3xl border border-solid border-dark bg-light p-6 relative rounded-br-2xl dark:bg-dark dark:text-light dark:border-light ">
@@ -66,7 +62,7 @@ export const Project = ({ type, title, summary1, summary2, img, link, github }) 
               target="_blank"
               className="md:text-base ml-4 rounded-lg bg-dark text-light p-1 px-4 text-sm font-semibold hover:text-primary dark:bg-light dark:text-dark dark:hover:text-primary"
             >
-              {t.projects.projectBtn}
+              {button}
             </Link>
           </div>
         </div>

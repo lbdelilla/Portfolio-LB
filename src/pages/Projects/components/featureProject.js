@@ -2,9 +2,7 @@ import React from 'react'
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { useRouter } from "next/router";
-import es from "../../../components/translations/es";
-import en from "../../../components/translations/en";
+
 
 
 const FeatureProject = ({
@@ -15,10 +13,9 @@ const FeatureProject = ({
     img,
     link,
     github,
+    button
   }) => {
-    const { locale } = useRouter();
-    const t = locale === "es" ? es : en;
-  
+ 
     return (
       <article
         className="p-10 w-full flex items-center justify-between rounded-3xl border border-solid border-dark bg-light shadow-2xl 
@@ -82,7 +79,7 @@ const FeatureProject = ({
               rel="noopener noreferrer"
               className="sm-px-4 sm:text-base ml-4 rounded-lg bg-dark text-light p-1 px-6 text-lg font-semibold hover:text-primary dark:bg-light dark:text-dark dark:hover:text-primary"
             >
-              {t.projects.projectBtn}
+              {button}
             </Link>
           </div>
         </div>
