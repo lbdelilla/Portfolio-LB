@@ -1,9 +1,10 @@
+import React from 'react'
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { useRouter } from "next/router";
 
-export const FeatureProject = ({
+const FeatureProject = ({
     type,
     title,
     summary1,
@@ -85,3 +86,5 @@ export const FeatureProject = ({
       </article>
     );
   };
+
+export default FeatureProject

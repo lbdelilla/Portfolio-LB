@@ -1,3 +1,4 @@
+import React from 'react'
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
@@ -69,3 +70,5 @@ export const Project = ({ type, title, summary1, summary2, img, link, github }) 
       </article>
     );
   };
+
+  export default Project;
