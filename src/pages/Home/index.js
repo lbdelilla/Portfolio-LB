@@ -3,11 +3,11 @@ import { motion } from "framer-motion";
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
-import Lucia from "../../public/images/profile/lb-profile.png";
+import Lucia from "../../../public/images/profile/lb-profile.png";
 import AnimatedText from "@/components/animatedText";
 import TransitionEffect from "@/components/transitionEffect";
-import en from "../components/translations/en.json";
-import es from "../components/translations/es.json";
+import en from "../../components/translations/en.json";
+import es from "../../components/translations/es.json";
 import { useRouter } from "next/router";
 
 const title = {

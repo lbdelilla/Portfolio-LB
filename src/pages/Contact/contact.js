@@ -3,8 +3,8 @@ import { useForm, ValidationError } from "@formspree/react";
 import AnimatedText from "@/components/animatedText";
 import Head from "next/head";
 import TransitionEffect from "@/components/transitionEffect";
-import en from "../components/translations/en.json";
-import es from "../components/translations/es.json";
+import en from "../../components/translations/en.json";
+import es from "../../components/translations/es.json";
 import { useRouter } from "next/router";
 
 const Contact = () => {
