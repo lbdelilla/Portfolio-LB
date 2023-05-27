@@ -10,8 +10,8 @@ import TransitionEffect from "@/components/transitionEffect";
 import en from "../../components/translations/en.json";
 import es from "../../components/translations/es.json";
 import { useRouter } from "next/router";
-import { FeatureProject } from "./components/featureProject";
-import { Project } from "./components/project";
+import  FeatureProject  from "./components/featureProject";
+import  Project  from "./components/project";
 
 
 
