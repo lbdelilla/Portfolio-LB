@@ -1,8 +1,8 @@
 import React from 'react'
 import AnimatedText from '../../../components/animatedText';
 import {motion} from "framer-motion";
-import en from "../components/translations/en.json";
-import es from "../components/translations/es.json";
+import en from "../../../src/components/translations/en.json";
+import es from "../../../src/components/translations/es.json";
 import { useRouter } from "next/router";
 
 const Skill = ({title, x, y}) => {

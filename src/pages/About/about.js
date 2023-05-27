@@ -1,13 +1,13 @@
 import Head from "next/head";
 import React from "react";
 import Image from "next/image";
-import Logos from "../../public/images/profile/about.png";
+import Logos from "../../../public/images/profile/about.png";
 import { Layout } from "@/components/layout";
 import Skills from "@/pages/About/components/skills";
 import AnimatedText from "@/components/animatedText";
 import TransitionEffect from "@/components/transitionEffect";
-import en from "../components/translations/en.json";
-import es from "../components/translations/es.json";
+import en from "../../../src/components/translations/en.json";
+import es from "../../components/translations/es.json";
 import { useRouter } from "next/router";
 
 const About = () => {
