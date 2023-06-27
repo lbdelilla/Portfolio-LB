@@ -13,7 +13,7 @@ export default function Document() {
           crossOrigin="anonymous"
           referrerPolicy="no-referrer"
         />
-        <Script async src="https://www.googletagmanager.com/gtag/js?id=G-HXBCFCGYF2" />
+       <Script async src="https://www.googletagmanager.com/gtag/js?id=G-T9MS8F7Y5G"/>
         <script dangerouslySetInnerHTML={{ __html: `(${setupGoogleAnalytics.toString()})()` }} />
       </Head>
       <body>
