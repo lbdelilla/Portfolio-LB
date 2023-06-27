@@ -4,7 +4,7 @@ import Script from "next/script";
 export default function Document() {
   return (
     <Html lang="es">
-       <Head>
+      <Head>
         <link
           rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -12,6 +12,14 @@ export default function Document() {
           crossorigin="anonymous"
           referrerpolicy="no-referrer"
         />
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-HXBCFCGYF2"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments)}
+          gtag('js', new Date());
+
+          gtag('config', 'G-HXBCFCGYF2');
+        </script>
       </Head>
       <body>
         <Script id="theme-switcher" strategy='beforeInteractive'>
