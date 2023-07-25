@@ -8,6 +8,7 @@ import Commeet from "../../public/images/logoCOLOR.png";
 import Portfolio from "../../public/images/Portfolio/Home-Light.png"
 import Disney from "../../public/images/disney.png";
 import Adriana from "../../public/images/adriana.png"
+import AATW from "../../public/images/aatw.png"
 import { motion } from "framer-motion"
 import TransitionEffect from "@/components/transitionEffect";
 import en from "../components/translations/en.json";
@@ -170,7 +171,17 @@ const Projects = () => {
                 img={Commeet}
                 link="https://sample-service-name-r5bf.onrender.com/"
                 github="https://github.com/lbdelilla/Commeet-EventPlanner"
-                type="HTML5 | CSS3 | Bootstrap | Javascript | Python | Flask | SqlAlchemy | PostgreSQL"
+                type="HTML5 | CSS3 | Bootstrap | Javascript |  React Js  | Python | Flask | SqlAlchemy | PostgreSQL"
+              />
+            </div>
+            <div className="col-span-6 sm:col-span-12">
+              <Project
+                title={t.projects.project5.title}
+                summary1={t.projects.project5.info}
+                img={AATW}
+                link="https://www.aatwagency.com"
+                github="https://github.com/lbdelilla/AATW-Web"
+                type="HTML5 | CSS3 | TailwindCSS | Javascript  | React Js "
               />
             </div>
             <div className="col-span-6 sm:col-span-12">
@@ -180,7 +191,7 @@ const Projects = () => {
                 img={Disney}
                 link="https://disney-blog-react-flask.vercel.app/"
                 github="https://github.com/lbdelilla/Disney-Blog-React-Flask"
-                type="HTML5 | CSS3 | Bootstrap | Javascript | Python | Flask | SqlAlchemy | PostgreSQL"
+                type="HTML5 | CSS3 | Bootstrap | Javascript |  React Js  | Python | Flask | SqlAlchemy | PostgreSQL"
               />
             </div>
             <div className="col-span-6 sm:col-span-12">
@@ -190,7 +201,7 @@ const Projects = () => {
                 img={Adriana}
                 link="https://www.adrianadelilla.es/"
                 github="https://github.com/lbdelilla/adriana_de_lilla"
-                type="HTML5 | CSS3 | Bootstrap | Javascript"              />
+                type="HTML5 | CSS3 | Bootstrap | Javascript |  React Js"              />
             </div>
             <div className="col-span-6  sm:col-span-12">
               <Project
