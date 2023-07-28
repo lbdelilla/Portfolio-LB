@@ -9,6 +9,7 @@ import Portfolio from '../../public/images/Portfolio/Home-Light.png'
 import Disney from '../../public/images/disney.png'
 import Adriana from '../../public/images/adriana.png'
 import AATW from '../../public/images/aatw.png'
+import StarWars from '../../public/images/starwars.png'
 import { motion } from 'framer-motion'
 import TransitionEffect from '@/components/transitionEffect'
 import en from '../components/translations/en.json'
@@ -199,9 +200,19 @@ const Projects = () => {
             </div>
             <div className="col-span-6 sm:col-span-12">
               <Project
+                title={t.projects.project6.title}
+                summary1={t.projects.project6.info}
+                img={AATW}
+                link="https://www.aatwagency.com"
+                github="https://github.com/lbdelilla/AATW-Web"
+                type="HTML5 | CSS3 | TailwindCSS | Javascript  | React Js | Python | Flask | SqlAlchemy | PostgreSQL"
+              />
+            </div>
+            <div className="col-span-6 sm:col-span-12">
+              <Project
                 title={t.projects.project5.title}
                 summary1={t.projects.project5.info}
-                img={AATW}
+                img={StarWars}
                 link="https://www.aatwagency.com"
                 github="https://github.com/lbdelilla/AATW-Web"
                 type="HTML5 | CSS3 | TailwindCSS | Javascript  | React Js "

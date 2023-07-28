@@ -48,6 +48,10 @@
         "project5": {
             "title": "AATW Agency",
             "info": "Discover the new website of AATW Agency, your ally in service outsourcing. They specialize in providing comprehensive solutions in outsourcing, marketing, merchandising, and events, helping companies of all sizes enhance their growth and achieve their goals. Explore their services and get in touch to take your business to the next level."
+        },
+        "project6": {
+            "title": "Star Wars Blog",
+            "info": "My Star Wars blog project features a portfolio where I leverage the swapi.tech API to access comprehensive information on characters, planets, and starships from the Star Wars universe. Additionally, I've implemented an interactive Yoda chat, powered by ChatGPT, and a translator that converts text into Wookiee language. It's a fun and engaging experience for all Star Wars fans!"
         }
     },
     "contactMe": {
