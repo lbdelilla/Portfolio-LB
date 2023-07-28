@@ -202,9 +202,9 @@ const Projects = () => {
               <Project
                 title={t.projects.project6.title}
                 summary1={t.projects.project6.info}
-                img={AATW}
-                link="https://www.aatwagency.com"
-                github="https://github.com/lbdelilla/AATW-Web"
+                img={StarWars}
+                link="https://star-wars-blog-sandy.vercel.app/"
+                github="https://github.com/lbdelilla/StarWars-Blog"
                 type="HTML5 | CSS3 | TailwindCSS | Javascript  | React Js | Python | Flask | SqlAlchemy | PostgreSQL"
               />
             </div>
@@ -212,7 +212,7 @@ const Projects = () => {
               <Project
                 title={t.projects.project5.title}
                 summary1={t.projects.project5.info}
-                img={StarWars}
+                img={AATW}
                 link="https://www.aatwagency.com"
                 github="https://github.com/lbdelilla/AATW-Web"
                 type="HTML5 | CSS3 | TailwindCSS | Javascript  | React Js "
