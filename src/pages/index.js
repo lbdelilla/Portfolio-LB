@@ -61,6 +61,7 @@ export default function Home() {
             <div className="w-1/2 flex flex-col m-0 xl:mx-4 md:w-full md:hidden lg:hidden sm:hidden xs:hidden">
               <motion.div variants={title} initial="initial" animate="animate">
                 <Image
+                  quality={80}
                   src={Lucia}
                   alt="Lucía Belén"
                   width={600}
@@ -76,7 +77,6 @@ export default function Home() {
               </motion.div>
             </div>
           </div>
-     
         </Layout>
       </main>
     </>

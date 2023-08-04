@@ -30,6 +30,7 @@ const Project = ({ type, title, summary1, summary2, img, link, github }) => {
         className="w-full cursor-pointer overflow-hidden rounded-lg "
       >
         <Image
+          quality={85}
           src={img}
           alt={title}
           className="w-full h-auto rounded "
@@ -110,6 +111,7 @@ const FeatureProject = ({
         className="w-1/2 cursor-pointer overflow-hidden rounded-lg lg:w-full"
       >
         <Image
+          quality={85}
           src={img}
           alt={title}
           className="w-full h-auto"
