@@ -3,7 +3,7 @@
 <br />
 
 See the website following link👇: <br />
-[Portfolio Website](https://devdreaming.com//videos/nextjs-tutorial-build-portfolio-tailwind-css-framer-motion) <br />
+[Portfolio Website](https://www.luciabelen.dev/) <br />
 
 <h3 align="left">▶ Contact me: &nbsp;
 <a href="mailto:lbdelilla@gmail.com" target="_blank"> <img  src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Gmail_icon_%282020%29.svg" height="25" width="30" alt="Lucia Belen" ></img></a></h3><br />
